@@ -1,11 +1,14 @@
 numero = ARGV[0].to_i
+modulo = 0
+
 for i in 1..numero
-    if i%6 ==1 || i%6 == 2
-        print "."
-    elsif i%6 ==3 || i%6 == 4
-        print "*"
-    else
-        print "|"
+    modulo = i % 4
+    if i % 4 == 0
+        print "..**||"
+    elsif i % 4 == 1
+        print "..**||"
+    elsif i % 4 == 2
+        print "..**||"
     end
 end
 
